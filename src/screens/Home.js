@@ -72,7 +72,7 @@ export default function HomeScreen() {
           piodjfipj fsijsiodj piodjfipj fsijsiodj piodjfipj fsijsiodj{" "}
         </Text>
       </TouchableOpacity>
-      
+
       <TouchableOpacity style={style.Note}>
         <Text style={style.NoteTitle}> Welcome Home!</Text>
         <Text style={style.NoteContent}>

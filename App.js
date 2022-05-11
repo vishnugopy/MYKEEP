@@ -5,7 +5,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import Home from "./src/screens/Home";
 import Task from "./src/screens/Task";
 import { Icon } from "react-native-elements";
-import { View, Text, StyleSheet } from "react-native";
+import { StyleSheet } from "react-native";
 
 const Stack = createStackNavigator();
 
@@ -16,6 +16,15 @@ export default function App() {
     },
   });
 
+  const styles = StyleSheet.create({
+    container: {
+      flex: 1,
+      backgroundColor: '#fff',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+  });
+
   return (
     <NavigationContainer>
       <Stack.Navigator
@@ -23,9 +32,6 @@ export default function App() {
         screenOptions={{
           headerStyle: {
             backgroundColor: "#fff",
-          },
-          headerTitleStyle: {
-            alignItems: "center",
           },
           headerTintColor: "#228CDB",
         }}

@@ -1,5 +1,11 @@
 import React from "react";
-import { Text, View, StyleSheet, ScrollView } from "react-native";
+import {
+  Text,
+  View,
+  StyleSheet,
+  ScrollView,
+  TouchableOpacity,
+} from "react-native";
 
 export default function HomeScreen() {
   const style = StyleSheet.create({
@@ -13,13 +19,12 @@ export default function HomeScreen() {
       paddingVertical: 30,
       paddingHorizontal: 10,
       borderRadius: 15,
-      borderColor: "#000",
+      borderColor: "#228CDB",
       borderWidth: 1,
     },
     NoteTitle: {
       fontSize: 15,
       fontWeight: "bold",
-      color: "#228CDB",
       opacity: 0.7,
       marginBottom: 10,
     },
@@ -32,41 +37,50 @@ export default function HomeScreen() {
 
   return (
     <ScrollView style={style.NoteContainer}>
-      <View style={style.Note}>
+      <TouchableOpacity style={style.Note}>
         <Text style={style.NoteTitle}> Welcome Home!</Text>
         <Text style={style.NoteContent}>
           piodjfipj fsijsiodj piodjfipj fsijsiodj piodjfipj fsijsiodj piodjfipj
           fsijsiodj piodjfipj fsijsiodj piodjfipj fsijsiodj piodjfipj fsijsiodj
           piodjfipj fsijsiodj piodjfipj fsijsiodj piodjfipj fsijsiodj{" "}
         </Text>
-      </View>
+      </TouchableOpacity>
 
-      <View style={style.Note}>
+      <TouchableOpacity style={style.Note}>
         <Text style={style.NoteTitle}> Welcome Home!</Text>
         <Text style={style.NoteContent}>
           piodjfipj fsijsiodj piodjfipj fsijsiodj piodjfipj fsijsiodj piodjfipj
           fsijsiodj piodjfipj fsijsiodj piodjfipj fsijsiodj piodjfipj fsijsiodj
           piodjfipj fsijsiodj piodjfipj fsijsiodj piodjfipj fsijsiodj{" "}
         </Text>
-      </View>
+      </TouchableOpacity>
 
-      <View style={style.Note}>
+      <TouchableOpacity style={style.Note}>
         <Text style={style.NoteTitle}> Welcome Home!</Text>
         <Text style={style.NoteContent}>
           piodjfipj fsijsiodj piodjfipj fsijsiodj piodjfipj fsijsiodj piodjfipj
           fsijsiodj piodjfipj fsijsiodj piodjfipj fsijsiodj piodjfipj fsijsiodj
           piodjfipj fsijsiodj piodjfipj fsijsiodj piodjfipj fsijsiodj{" "}
         </Text>
-      </View>
+      </TouchableOpacity>
 
-      <View style={style.Note}>
+      <TouchableOpacity style={style.Note}>
         <Text style={style.NoteTitle}> Welcome Home!</Text>
         <Text style={style.NoteContent}>
           piodjfipj fsijsiodj piodjfipj fsijsiodj piodjfipj fsijsiodj piodjfipj
           fsijsiodj piodjfipj fsijsiodj piodjfipj fsijsiodj piodjfipj fsijsiodj
           piodjfipj fsijsiodj piodjfipj fsijsiodj piodjfipj fsijsiodj{" "}
         </Text>
-      </View>
+      </TouchableOpacity>
+      
+      <TouchableOpacity style={style.Note}>
+        <Text style={style.NoteTitle}> Welcome Home!</Text>
+        <Text style={style.NoteContent}>
+          piodjfipj fsijsiodj piodjfipj fsijsiodj piodjfipj fsijsiodj piodjfipj
+          fsijsiodj piodjfipj fsijsiodj piodjfipj fsijsiodj piodjfipj fsijsiodj
+          piodjfipj fsijsiodj piodjfipj fsijsiodj piodjfipj fsijsiodj{" "}
+        </Text>
+      </TouchableOpacity>
     </ScrollView>
   );
 }

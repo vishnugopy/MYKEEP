@@ -16,14 +16,6 @@ export default function App() {
     },
   });
 
-  const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: '#fff',
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
-  });
 
   return (
     <NavigationContainer>
@@ -33,6 +25,10 @@ export default function App() {
           headerStyle: {
             backgroundColor: "#fff",
           },
+          headerTitleStyle: {
+            color: "#000",
+          },
+          headerTitleAlign: "center",
           headerTintColor: "#228CDB",
         }}
       >
@@ -44,7 +40,7 @@ export default function App() {
               <Icon
                 name="plus"
                 type="feather"
-                color="#000"
+                color="#228CDB"
                 style={style.headerIcon}
                 onPress={() => navigation.navigate("Task")}
               />

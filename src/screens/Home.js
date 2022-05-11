@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View, StyleSheet , ScrollView } from "react-native";
+import { Text, View, StyleSheet, ScrollView } from "react-native";
 
 export default function HomeScreen() {
   const style = StyleSheet.create({
@@ -8,11 +8,13 @@ export default function HomeScreen() {
       height: "100%",
     },
     Note: {
-        marginVertical: 10,
+      marginVertical: 10,
       backgroundColor: "#fff",
       paddingVertical: 30,
       paddingHorizontal: 10,
       borderRadius: 15,
+      borderColor: "#000",
+      borderWidth: 1,
     },
     NoteTitle: {
       fontSize: 15,
